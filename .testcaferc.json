@@ -1,0 +1,11 @@
+{
+  "skipJsErrors": false,
+  "assertionTimeout": 10000,
+
+  "browsers": ["chrome"],
+  "src": [
+      "./pom/tests/login.test.js",
+      "./pom/tests/tasks.test.js",
+      "./pom/tests/project.test.js"
+  ]
+}
