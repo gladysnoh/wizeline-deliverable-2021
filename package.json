@@ -28,6 +28,7 @@
     "testcafe-reporter-allure": "^1.0.5"
   },
   "devDependencies": {
-    "eslint": "^8.3.0"
+    "eslint": "^8.3.0",
+    "allure-commandline": "^2.13.8"
   }
 }

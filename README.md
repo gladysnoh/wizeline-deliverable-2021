@@ -109,6 +109,17 @@ npm run login-f-test-multi-headless
 > It will run the following test cases on Chrome browser:
 >
 >* 6.Create a new project, choose any color you like and add it to favorites.
+ 
+6. To generate the allure report, first execute:
+```
+npm run test-from-config-file
+```
+Then, execute:
+```
+npm run generate-report
+```
+
+
 ## License
 - - - -
 [ISC](https://choosealicense.com/licenses/isc/)
