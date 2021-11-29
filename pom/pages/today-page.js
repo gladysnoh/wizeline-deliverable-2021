@@ -4,7 +4,7 @@ import { WAIT_TIME } from '../data/constants';
 
 class TodayPage {
     constructor() {
-        this.todayTitle = Selector('.simple_content').withExactText('Today')
+        this.todayTitle = Selector('.simple_content').nth(8)
         this.addTaskInitialButton = Selector('.view_content .plus_add_button').withExactText('Add task')
         // Form fields
         this.formTaskEditorContainer = Selector('form.task_editor');
