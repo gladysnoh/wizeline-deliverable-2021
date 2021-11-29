@@ -1,4 +1,4 @@
-# Deliverble 1
+# Deliverable 1
 ### Front-End
 
 ## Introduction
