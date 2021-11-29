@@ -5,7 +5,7 @@
         "node": true
     },
     "plugins":["testcafe"],
-    "extends": ["eslint:recommended","plugin:testcafe/recomended"],
+    "extends": ["eslint:recommended","plugin:testcafe/recommended"],
     "parserOptions": {
         "ecmaVersion": 13,
         "sourceType": "module"
