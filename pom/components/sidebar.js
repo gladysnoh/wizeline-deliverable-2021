@@ -1,5 +1,4 @@
 import { Selector, t } from 'testcafe';
-import { WAIT_TIME } from '../data/constants';
 
 class Sidebar {
     TODAY_FILTER = 'TODAY';
