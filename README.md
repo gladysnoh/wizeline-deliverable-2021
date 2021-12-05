@@ -13,16 +13,17 @@ The purpose of this deliverable is to apply all the techniques and best practice
 ## Project structure
 ```
 ├── ...                  
-├── pom                   # Main Page Object Model folder
-    ├── components        # Navbar and sidebar
-    ├── data              # Constants and roles
-    ├── pages             # All files per screen
-    ├── tests             # Test files
-    └── utils             # Utils to reuse
-├── .env 
+├── frontend 
+  ├── pom                   # Main Page Object Model folder
+     ├── components        # Navbar and sidebar
+     ├── data              # Constants and roles
+     ├── pages             # All files per screen
+     ├── tests             # Test files
+     └── utils             # Utils to reuse
+  ├── .eslintc.json
+  ├── .testcaferc.json
+  ├── package.json
 ├── .gitignore
-├── .testcaferc.json
-├── package.json
 ├── README.md     
 ```
 ## Pre-requisites
@@ -124,8 +125,60 @@ npm run generate-report
 
 ## Introduction
 - - - -
-The purpose of this deliverable is to apply all the techniques and best practices covered during the back-end workshops provided by Wizeline. In this repository you will find the scripts for executing the tests of [todoist](https://todoist.com/) on Windows environment.
+The purpose of this deliverable is to apply all the techniques and best practices covered during the back-end workshops provided by Wizeline. In this repository you will find the script for executing the [todoist](https://todoist.com/) collection on Windows environment.
 
+## Tech stack
+- - - -
+- Newman
+- Newman-reporter-htmlextra
+
+## Project structure
+```
+├── ...                  
+├── backend 
+  ├── collections                 
+     ├── deliverable2.json        # Postman endpoints and global variables
+  ├── reports                     # Contains the html report after executing the script     
+├── .gitignore
+├── README.md  
+```
+## Pre-requisites
+- - - -
+- Node.js
+- Browsers: Chrome or Firefox(To visualize the report)
+
+## Project Setup
+- - - -
+1. Clone this repository.
+2. Go to the backend folder.
+3. Go to the collection folder.
+4. Edit the deliverable2.json and set your TODOIST TOKEN on line 1404.
+5. Go back to the backend folder again.
+6. Run the command
+```
+   npm install
+```
+
+## Dependencies
+- - - -
+- newman
+- newman-reporter-htmlextra
+
+## How to use the test scripts
+- - - -
+1. To run the todoist collection, execute:
+```
+npm run todoist-collection-report
+```
+> It will generate the html report inside the report folder.
+
+## How to visualize the collection on Postman
+1. Open your postman application.
+2. Click on File > Import.
+3. Select the deliverable2.json file located under the  ./backend/collections folder.
+4. Select the collection named: "Deliverable2".
+5. Go to the "Variables" tab.
+6. Set your todoist TOKEN in the environment variable "token".
 
 ## License
 - - - -
