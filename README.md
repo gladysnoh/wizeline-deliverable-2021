@@ -119,6 +119,13 @@ Then, execute:
 npm run generate-report
 ```
 
+# Deliverable 2
+### Back-End
+
+## Introduction
+- - - -
+The purpose of this deliverable is to apply all the techniques and best practices covered during the back-end workshops provided by Wizeline. In this repository you will find the scripts for executing the tests of [todoist](https://todoist.com/) on Windows environment.
+
 
 ## License
 - - - -

@@ -1,0 +1,5 @@
+.idea/
+**/node_modules
+frontend/allure
+frontend/.env
+**/package-lock.json
