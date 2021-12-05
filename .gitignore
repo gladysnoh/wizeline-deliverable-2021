@@ -3,3 +3,4 @@
 frontend/allure
 frontend/.env
 **/package-lock.json
+**/reports/*
