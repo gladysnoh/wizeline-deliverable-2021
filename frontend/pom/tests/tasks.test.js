@@ -2,7 +2,7 @@ import { TASK_DATA, URLS } from '../data/constants'
 import todayPage from '../pages/today-page'
 import upcomingPage from '../pages/upcoming-page'
 import { STANDARD_USER } from '../data/roles';
-import sidebar from '../components/sidebar';
+import sidebar from '../pages/sidebar';
 import inboxPage from '../pages/inbox-page';
 
 fixture('Task feature test')

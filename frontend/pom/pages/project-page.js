@@ -1,5 +1,5 @@
 import { Selector, t } from 'testcafe';
-import sidebar from '../components/sidebar';
+import sidebar from './sidebar';
 import { WAIT_TIME } from '../data/constants';
 
 class ProjectPage {

@@ -1,5 +1,5 @@
 import { Selector, t } from 'testcafe';
-import navbar from '../components/navbar';
+import navbar from './navbar';
 
 class LoginPage {
     constructor() {
