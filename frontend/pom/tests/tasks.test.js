@@ -10,7 +10,7 @@ fixture('Task feature test')
     .beforeEach(async t => {
         await t.useRole(STANDARD_USER)
     })
-    .afterEach(async t => {
+    .afterEach(async () => {
         // Delete all created tasks!
         await sidebar.goToFilter(sidebar.INBOX_FILTER)
         await inboxPage.deleteAllInboxTasks()

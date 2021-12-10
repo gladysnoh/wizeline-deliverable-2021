@@ -15,7 +15,7 @@
     "login-f-test-multi-headless": "testcafe chrome:headless,firefox:headless ./pom/tests --fixture \"Login feature test\"",
     "test-from-config-file": "testcafe --reporter allure",
     "generate-report": "allure generate allure/allure-results --clean -o allure/allure-report && allure open allure/allure-report",
-    "lint": "eslint ./pom"
+    "check-eslint-rules": "eslint ./pom"
   },
   "author": "Gladys Noh",
   "license": "ISC",
