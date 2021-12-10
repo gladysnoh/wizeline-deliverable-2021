@@ -1,6 +1,6 @@
 import { Selector } from 'testcafe';
 
-class navbar {
+class Navbar {
     constructor() {
         this.logInOption = Selector('ul>li>a').withAttribute('href', /login/u)
         this.avatarButton = Selector('.top_bar_btn.settings_btn')
@@ -8,4 +8,4 @@ class navbar {
     }
 }
 
-export default new navbar()
+export default new Navbar()
