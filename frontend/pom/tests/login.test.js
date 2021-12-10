@@ -7,7 +7,7 @@ fixture('Login feature test')
 
 test.meta('type', 'smoke')('1. As a User I should be able to Login successfully', async t => {
     await loginPage.submitLoginForm(CREDENTIALS.ACCEPTED_CREDENTIALS.EMAIL_USER, CREDENTIALS.ACCEPTED_CREDENTIALS.PASSWORD)
-    await t.expect(todayPage.todayTitle.exists).ok()
+    await t.expect(todayPage.mainContainer.exists).ok()
     await loginPage.logOut()
 })
 
