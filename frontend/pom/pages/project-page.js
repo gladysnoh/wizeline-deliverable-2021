@@ -1,4 +1,6 @@
-import { Selector } from 'testcafe';
+import { Selector, t } from 'testcafe';
+import sidebar from '../components/sidebar';
+import { WAIT_TIME } from '../data/constants';
 
 class ProjectPage {
 
@@ -13,6 +15,16 @@ class ProjectPage {
         this.addFavoritesCheckbox = Selector('.reactist_switch')
             .child('input').withAttribute('name', 'is_favorite')
         this.addProjectButton = Selector('footer > button').withExactText('Add')
+    }
+
+    async addProjectWithRedColor(projectName) {
+        await t.click(sidebar.addProjectButton)
+        await t.typeText(this.nameProjectInput, projectName, { paste: true })
+        await t.click(this.colorProjecDropdownMenu)
+        await t.click(this.redColorProjectOption)
+        await t.click(this.addFavoritesCheckbox)
+        await t.click(this.addProjectButton)
+        await t.wait(WAIT_TIME.TWO_SECONDS)
     }
 
     getFavoriteListSelector() {
