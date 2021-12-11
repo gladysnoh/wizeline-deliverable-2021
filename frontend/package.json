@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "testcafe chrome ./pom/tests",
-    "all-test-headless": "testcafe chrome:headless ./pom/tests",
+    "all-test-headless": "testcafe chrome:headless ./pom/tests --reporter allure",
     "smoke-testing": "testcafe chrome ./pom/tests --test-meta type=smoke",
-    "smoke-testing-headless": "testcafe chrome:headless ./pom/tests --test-meta type=smoke",
+    "smoke-testing-headless": "testcafe chrome:headless ./pom/tests --test-meta type=smoke --reporter allure",
     "login-test": "testcafe chrome ./pom/tests/login.test.js",
     "tasks-test": "testcafe chrome ./pom/tests/tasks.test.js",
     "project-test": "testcafe chrome ./pom/tests/project.test.js",
