@@ -3,6 +3,11 @@
 	"name": "Todoist",
 	"values": [
 		{
+			"key": "token",
+			"value": "$TODOIST_TOKEN",
+			"enabled": true
+		},
+		{
 			"key": "baseURL",
 			"value": "https://api.todoist.com/rest/v1",
 			"enabled": true
