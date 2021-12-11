@@ -17,8 +17,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '14.x'
-      - name: Install eslint package
-        run: cd frontend && npm install eslint
+      - name: Install eslint dependencies
+        run: cd frontend && npm install eslint eslint-plugin-testcafe
       - name: Check ESLint rules
         run: cd frontend && npm run check-eslint-rules
 
