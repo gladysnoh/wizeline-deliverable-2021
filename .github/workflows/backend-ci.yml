@@ -22,4 +22,4 @@ jobs:
       - name: Run POSTMAN collection
         env:
           token: ${{ secrets.TODOIST_TOKEN }}
-        run: cd backend && npm run todoist-collection
+        run: echo This is my token $token && cd backend && npm run todoist-collection
