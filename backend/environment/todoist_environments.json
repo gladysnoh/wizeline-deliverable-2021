@@ -4,7 +4,7 @@
 	"values": [
 		{
 			"key": "token",
-			"value": "$TODOIST_TOKEN",
+			"value": "{{TODOIST_TOKEN}}",
 			"enabled": true
 		},
 		{
