@@ -1397,31 +1397,5 @@
 				]
 			}
 		}
-	],
-	"variable": [
-		{
-			"key": "token",
-			"value": "PUT YOUR TOKEN HERE"
-		},
-		{
-			"key": "baseURL",
-			"value": "https://api.todoist.com/rest/v1"
-		},
-		{
-			"key": "baseProjectURL",
-			"value": "{{baseURL}}/projects"
-		},
-		{
-			"key": "baseTaskURL",
-			"value": "{{baseURL}}/tasks"
-		},
-		{
-			"key": "projectId",
-			"value": ""
-		},
-		{
-			"key": "taskId",
-			"value": ""
-		}
 	]
 }

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "todoist-collection-report": "npx newman run ./collections/deliverable2.json -r htmlextra --reporter-htmlextra-export ./reports/report.html"
+    "todoist-collection-report": "newman run ./collections/deliverable2.json -e ./environment/todoist_environments.json -r htmlextra --reporter-htmlextra-export ./reports/report.html"
   },
   "author": "Gladys Noh",
   "license": "ISC",
