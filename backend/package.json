@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test-todoist-api": "newman run ./collections/deliverable2.json -e ./environment/todoist_environments.json -r htmlextra --reporter-htmlextra-export ./reports/report.html",
-    "test-todoist-api-ci": "newman run ./collections/deliverable2.json -e ./environment/todoist_environments.json --env-var \"token=$TODOIST_TOKEN\" -r htmlextra --reporter-htmlextra-export testResults/htmlreport.html"
+    "test-todoist-api-ci": "newman run ./collections/deliverable2.json -e ./environment/todoist_environments.json --env-var \"token=$TODOIST_TOKEN\" -r htmlextra --reporter-htmlextra-export testResults/htmlreport.html > testResults/runreport1.html"
   },
   "author": "Gladys Noh",
   "license": "ISC",
