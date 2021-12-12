@@ -34,12 +34,12 @@ jobs:
         run: cd backend && npm install
       - name: Make directory for test results
         run: cd backend && mkdir -p testResults
-      - name: Run POSTMAN collection and generate report file
+      - name: Run Postman collection and generate the report file
         env:
           TODOIST_TOKEN: ${{ secrets.TODOIST_TOKEN }}
         run: cd backend && npm run test-todoist-api-ci
-      - name: Output the run details
+      - name: Upload the html report
         uses: actions/upload-artifact@v2
         with:
           name: RunReports
-          path: backend/testResults
+          path: backend/testResults/htmlreport.html
