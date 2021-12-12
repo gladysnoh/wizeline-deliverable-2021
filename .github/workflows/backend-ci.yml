@@ -32,7 +32,14 @@ jobs:
           node-version: '14.x'
       - name: Install npm dependencies
         run: cd backend && npm install
-      - name: Run POSTMAN collection
+      - name: Make directory for test results
+        run: cd backend && mkdir -p testResults
+      - name: Run POSTMAN collection and generate report file
         env:
           TODOIST_TOKEN: ${{ secrets.TODOIST_TOKEN }}
         run: cd backend && npm run test-todoist-api-ci
+      - name: Output the run details
+        uses: actions/upload-artifact@v2
+        with:
+          name: RunReports
+          path: testResults
