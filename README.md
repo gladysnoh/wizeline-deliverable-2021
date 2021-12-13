@@ -136,9 +136,11 @@ The purpose of this deliverable is to apply all the techniques and best practice
 ```
 ├── ...                  
 ├── backend 
-  ├── collections                 
-     ├── deliverable2.json        # Postman endpoints and global variables
-  ├── reports                     # Contains the html report after executing the script     
+  ├── collections                 # Postman endpoints
+     ├── deliverable2.json 
+  ├── environment                 # Postman environment variables 
+     ├── todoist_environments.json          
+  ├── reports                     # Contains the html report after executing the script whitout CI and CD environments
 ├── .gitignore
 ├── README.md  
 ```
@@ -151,8 +153,8 @@ The purpose of this deliverable is to apply all the techniques and best practice
 - - - -
 1. Clone this repository.
 2. Go to the backend folder.
-3. Go to the collection folder.
-4. Edit the deliverable2.json and set your TODOIST TOKEN on line 1404.
+3. Go to the environment folder.
+4. Edit the todoist_environments.json and set your TODOIST TOKEN on line 7.
 5. Go back to the backend folder again.
 6. Run the command
 ```
@@ -168,17 +170,20 @@ The purpose of this deliverable is to apply all the techniques and best practice
 - - - -
 1. To run the todoist collection, execute:
 ```
-npm run todoist-collection-report
+npm run test-todoist-api
 ```
 > It will generate the html report inside the report folder.
+
+> Note: The script test-todoist-api-ci is for Github actions only.
 
 ## How to visualize the collection on Postman
 1. Open your postman application.
 2. Click on File > Import.
 3. Select the deliverable2.json file located under the  ./backend/collections folder.
 4. Select the collection named: "Deliverable2".
-5. Go to the "Variables" tab.
-6. Set your todoist TOKEN in the environment variable "token".
+5. Click on File > Import.
+6. Select the todoist_environments.json file located under the  ./backend/environment folder.
+7. Choose the environment name Todoist.
 
 ## License
 - - - -
