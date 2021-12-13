@@ -268,6 +268,9 @@
 											"pm.test(\"Status code is 2xx\", function () {\r",
 											"    pm.response.to.be.success;\r",
 											"});\r",
+											"pm.test(\"Content-Type is present\", function () {\r",
+											"    pm.response.to.be.header(\"Content-Type\", \"text/html; charset=utf-8\");\r",
+											"});\r",
 											""
 										],
 										"type": "text/javascript"
@@ -324,6 +327,9 @@
 										"exec": [
 											"pm.test(\"Status code is 2xx\", function () {\r",
 											"    pm.response.to.be.success;\r",
+											"});\r",
+											"pm.test(\"Content-Type is present\", function () {\r",
+											"    pm.response.to.be.header(\"Content-Type\", \"text/html; charset=utf-8\");\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -360,7 +366,9 @@
 											"pm.test(\"Status code is 404\", function () {\r",
 											"    pm.response.to.have.status(404);\r",
 											"});\r",
-											"\r",
+											"pm.test(\"Content-Type is present\", function () {\r",
+											"    pm.response.to.be.header(\"Content-Type\", \"text/html; charset=utf-8\");\r",
+											"});\r",
 											""
 										],
 										"type": "text/javascript"
@@ -391,6 +399,9 @@
 											"});\r",
 											"pm.test(\"Validate Bad request\", function (){\r",
 											"    pm.expect(pm.response.text()).to.contain('Bad Request');\r",
+											"});\r",
+											"pm.test(\"Content-Type is present\", function () {\r",
+											"    pm.response.to.be.header(\"Content-Type\", \"text/plain; charset=utf-8\");\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -451,6 +462,9 @@
 											"});\r",
 											"pm.test(\"Validate Not found\", function (){\r",
 											"    pm.expect(pm.response.text()).to.contain('Not found');\r",
+											"});\r",
+											"pm.test(\"Content-Type is present\", function () {\r",
+											"    pm.response.to.be.header(\"Content-Type\", \"text/plain; charset=utf-8\");\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -481,6 +495,9 @@
 										"exec": [
 											"pm.test(\"Status code is 400\", function () {\r",
 											"    pm.response.to.have.status(400);\r",
+											"});\r",
+											"pm.test(\"Content-Type is present\", function () {\r",
+											"    pm.response.to.be.header(\"Content-Type\", \"text/plain; charset=utf-8\");\r",
 											"});\r",
 											"pm.test(\"Validate mandatory fields message\", function (){\r",
 											"    pm.expect(pm.response.text()).to.contain('At least one of name, color or favorite fields should be set');\r",
@@ -540,6 +557,9 @@
 										"exec": [
 											"pm.test(\"Status code is 400\", function () {\r",
 											"    pm.response.to.have.status(400);\r",
+											"});\r",
+											"pm.test(\"Content-Type is present\", function () {\r",
+											"    pm.response.to.be.header(\"Content-Type\", \"text/plain; charset=utf-8\");\r",
 											"});\r",
 											"pm.test(\"Validate invalid project id message\", function (){\r",
 											"    pm.expect(pm.response.text()).to.contain('project_id is invalid');\r",
@@ -907,6 +927,9 @@
 										"exec": [
 											"pm.test(\"Status code is 2xx\", function () {",
 											"    pm.response.to.be.success;",
+											"});",
+											"pm.test(\"Content-Type is present\", function () {",
+											"    pm.response.to.be.header(\"Content-Type\", \"text/html; charset=utf-8\");",
 											"});"
 										],
 										"type": "text/javascript"
@@ -952,6 +975,9 @@
 										"exec": [
 											"pm.test(\"Status code is 2xx\", function () {",
 											"    pm.response.to.be.success;",
+											"});",
+											"pm.test(\"Content-Type is present\", function () {",
+											"    pm.response.to.be.header(\"Content-Type\", \"text/html; charset=utf-8\");",
 											"});"
 										],
 										"type": "text/javascript"
@@ -998,6 +1024,9 @@
 										"exec": [
 											"pm.test(\"Status code is 2xx\", function () {",
 											"    pm.response.to.be.success;",
+											"});",
+											"pm.test(\"Content-Type is present\", function () {",
+											"    pm.response.to.be.header(\"Content-Type\", \"text/html; charset=utf-8\");",
 											"});"
 										],
 										"type": "text/javascript"
@@ -1038,6 +1067,9 @@
 										"exec": [
 											"pm.test(\"Status code is 2xx\", function () {",
 											"    pm.response.to.be.success;",
+											"});",
+											"pm.test(\"Content-Type is present\", function () {",
+											"    pm.response.to.be.header(\"Content-Type\", \"text/html; charset=utf-8\");",
 											"});"
 										],
 										"type": "text/javascript"
@@ -1073,6 +1105,9 @@
 										"exec": [
 											"pm.test(\"Status code is 404\", function () {\r",
 											"    pm.response.to.have.status(404);\r",
+											"});\r",
+											"pm.test(\"Content-Type is present\", function () {\r",
+											"    pm.response.to.be.header(\"Content-Type\", \"text/html; charset=utf-8\");\r",
 											"});\r",
 											""
 										],
@@ -1110,6 +1145,9 @@
 											"});\r",
 											"pm.test(\"Validate Bad request\", function (){\r",
 											"    pm.expect(pm.response.text()).to.contain('Bad Request');\r",
+											"});\r",
+											"pm.test(\"Content-Type is present\", function () {\r",
+											"    pm.response.to.be.header(\"Content-Type\", \"text/plain; charset=utf-8\");\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -1164,6 +1202,9 @@
 											"});\r",
 											"pm.test(\"Validate invalid task id message\", function () {\r",
 											"    pm.expect(pm.response.text()).eql(\"task_id is invalid\");\r",
+											"});\r",
+											"pm.test(\"Content-Type is present\", function () {\r",
+											"    pm.response.to.be.header(\"Content-Type\", \"text/plain; charset=utf-8\");\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -1197,6 +1238,9 @@
 											"});",
 											"pm.test(\"Validate empty fields message\", function () {",
 											"    pm.expect(pm.response.text()).eql(\"At least one of supported fields should be set and non-empty\");",
+											"});",
+											"pm.test(\"Content-Type is present\", function () {",
+											"    pm.response.to.be.header(\"Content-Type\", \"text/plain; charset=utf-8\");",
 											"});"
 										],
 										"type": "text/javascript"
@@ -1246,6 +1290,9 @@
 											"",
 											"pm.test(\"Validate task not found message\", function () {",
 											"    pm.expect(pm.response.text()).eql(\"Task not found\")",
+											"});",
+											"pm.test(\"Content-Type is present\", function () {",
+											"    pm.response.to.be.header(\"Content-Type\", \"text/plain; charset=utf-8\");",
 											"});"
 										],
 										"type": "text/javascript"
@@ -1296,6 +1343,9 @@
 											"",
 											"pm.test(\"Validate task not found message\", function () {",
 											"    pm.expect(pm.response.text()).eql(\"Task not found\")",
+											"});",
+											"pm.test(\"Content-Type is present\", function () {",
+											"    pm.response.to.be.header(\"Content-Type\", \"text/plain; charset=utf-8\");",
 											"});"
 										],
 										"type": "text/javascript"
@@ -1340,6 +1390,9 @@
 											"",
 											"pm.test(\"Validate invalid task message\", function () {",
 											"    pm.expect(pm.response.text()).eql(\"Task is invalid\");",
+											"});",
+											"pm.test(\"Content-Type is present\", function () {",
+											"    pm.response.to.be.header(\"Content-Type\", \"text/plain; charset=utf-8\");",
 											"});"
 										],
 										"type": "text/javascript"
